@@ -1,0 +1,410 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container-header {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+  }
+  .js-open-div {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    display: flex;
+    height: 60px;
+
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 24px;
+      margin: 0 auto;
+      padding-bottom: 25px;
+      padding-left: 15px;
+      text-decoration: none;
+      color: $black;
+      font-family: $fontTypeRaleway;
+      font-weight: $boldFontWeight;
+      &--highlight {
+        color: $blue;
+      }
+    }
+    &__data {
+      display: none;
+    }
+    &__right-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+      display: none;
+    }
+    &__webstudio {
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      font-size: $contactFontSize;
+      line-height: 1.14;
+      font-weight: 500;
+      margin-left: 93px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      display: none;
+    }
+
+    &__link {
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      color: $lightBlack;
+      font-size: $contactFontSize;
+      text-decoration: none;
+      display: none;
+      &:not(:first-child) {
+        padding-left: 46px;
+      }
+      &:hover {
+        color: $blue;
+      }
+      &--on {
+        transition: color 250ms;
+        transition-timing-function: $transitionTiming;
+        color: $lightBlack;
+        font-size: $contactFontSize;
+        text-decoration: none;
+        &::after {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          content: "";
+          position: absolute;
+          top: 77px;
+          width: 53px;
+          height: 4px;
+          background-color: $blue;
+          border-radius: 2px;
+        }
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    &__data {
+      display: none;
+    }
+    &__list {
+      display: none;
+    }
+
+    &__contact {
+      font-family: $fontTypeRoboto;
+      text-decoration: $globalTextDecoration;
+      color: $grey;
+      font-size: $contactFontSize;
+      line-height: 1.14;
+      align-items: center;
+      display: flex;
+      fill: $grey;
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      display: none;
+      &:hover {
+        color: $blue;
+        fill: $blue;
+      }
+      &:focus {
+        color: $blue;
+        fill: $blue;
+      }
+      &:last-child {
+        padding-left: 30px;
+      }
+    }
+    &__svg {
+      display: none;
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .js-open-div {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navigation {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 24px;
+      margin: 0 auto;
+      padding-bottom: 25px;
+      text-decoration: none;
+      color: $black;
+      font-family: $fontTypeRaleway;
+      font-weight: $boldFontWeight;
+      &--highlight {
+        color: $blue;
+      }
+    }
+
+    &__right-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      font-size: $contactFontSize;
+      line-height: 1.14;
+      font-weight: 500;
+      margin-left: 93px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+    .js-open-menu {
+      display: none;
+    }
+
+    &__link {
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      color: $lightBlack;
+      font-size: $contactFontSize;
+      text-decoration: none;
+      &:not(:first-child) {
+        padding-left: 46px;
+      }
+      &:hover {
+        color: $blue;
+      }
+      &--on {
+        transition: color 250ms;
+        transition-timing-function: $transitionTiming;
+        color: $lightBlack;
+        font-size: $contactFontSize;
+        text-decoration: none;
+        &::after {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          content: "";
+          position: absolute;
+          top: 77px;
+          width: 53px;
+          height: 4px;
+          background-color: $blue;
+          border-radius: 2px;
+        }
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+
+    &__data {
+      display: flex;
+      justify-content: flex-end;
+      text-align: center;
+      margin-left: 340px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      text-decoration: none;
+    }
+
+    &__contact {
+      font-family: $fontTypeRoboto;
+      text-decoration: $globalTextDecoration;
+      color: $grey;
+      font-size: $contactFontSize;
+      line-height: 1.14;
+      align-items: center;
+      display: flex;
+      fill: $grey;
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      &:hover {
+        color: $blue;
+        fill: $blue;
+      }
+      &:focus {
+        color: $blue;
+        fill: $blue;
+      }
+      &:last-child {
+        padding-left: 30px;
+      }
+    }
+    &__svg {
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+  .menu-mobile__open-svg {
+    display: none;
+  }
+  .js-open-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .navigation {
+    display: flex;
+    width: 100%;
+
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 24px;
+      margin: 0 auto;
+      padding-bottom: 25px;
+      text-decoration: none;
+      color: $black;
+      font-family: $fontTypeRaleway;
+      font-weight: $boldFontWeight;
+      &--highlight {
+        color: $blue;
+      }
+    }
+    &__right-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      font-size: $contactFontSize;
+      line-height: 1.14;
+      font-weight: 500;
+      margin-left: 93px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    &__link {
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      color: $lightBlack;
+      font-size: $contactFontSize;
+      text-decoration: none;
+      &:not(:first-child) {
+        padding-left: 46px;
+      }
+      &:hover {
+        color: $blue;
+      }
+      &--on {
+        transition: color 250ms;
+        transition-timing-function: $transitionTiming;
+        color: $lightBlack;
+        font-size: $contactFontSize;
+        text-decoration: none;
+        &::after {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          content: "";
+          position: absolute;
+          top: 77px;
+          width: 53px;
+          height: 4px;
+          background-color: $blue;
+          border-radius: 2px;
+        }
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+
+    &__data {
+      display: flex;
+      width: fit-content;
+      justify-content: flex-end;
+      text-align: center;
+      margin-left: 101px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      text-decoration: none;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-sizing: border-box;
+    }
+
+    &__contact {
+      font-family: $fontTypeRoboto;
+      text-decoration: $globalTextDecoration;
+      color: $grey;
+      font-size: $contactFontSize;
+      line-height: 1.14;
+      align-items: center;
+      display: flex;
+      fill: $grey;
+      transition: color 250ms;
+      transition-timing-function: $transitionTiming;
+      &:hover {
+        color: $blue;
+        fill: $blue;
+      }
+      &:focus {
+        color: $blue;
+        fill: $blue;
+      }
+      &:nth-child(2) {
+        margin-left: -3px;
+        padding-top: 10px;
+      }
+    }
+    &__svg {
+      margin-right: 10px;
+    }
+  }
+  .js-open-menu {
+    visibility: hidden;
+  }
+}

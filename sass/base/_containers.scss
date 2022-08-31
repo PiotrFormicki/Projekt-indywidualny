@@ -1,0 +1,103 @@
+.main__section--img {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  align-items: center;
+  background: url(../images/overlay-mobile-480.jpg);
+  background-size: cover;
+  background-position: contain;
+  background-repeat: no-repeat;
+  box-shadow: rgba(47, 48, 58, 0.4);
+  display: flex;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main__section--img {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/overlay-mobile-480.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main__section--img {
+      background-image: linear-gradient(
+          to right,
+          #2f303a66 100%,
+          #2f303a66 100%
+        ),
+        url(../images/overlay-mobile-480-2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main__section--img {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/overlay-tablet.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main__section--img {
+      background-image: linear-gradient(
+          to right,
+          #2f303a66 100%,
+          #2f303a66 100%
+        ),
+        url(../images/overlay-tablet-2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main__section--img {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/overlay-desktop.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main__section--img {
+      background-image: linear-gradient(
+          to right,
+          #2f303a66 100%,
+          #2f303a66 100%
+        ),
+        url(../images/overlay-desktop-2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    min-width: 320px;
+    max-width: 767px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 1199px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .container {
+    width: 1200px;
+    margin: $marginAuto;
+    align-items: center;
+  }
+
+  .footer__container {
+    margin: $marginAuto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .container-header {
+    width: 1200px;
+  }
+}

@@ -1,0 +1,146 @@
+.js-menu-container {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  padding-left: 40px;
+  z-index: 1337;
+  visibility: hidden;
+  transform: translateX(0);
+  background-color: $white;
+  transition-property: transform, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: $transitionTiming;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.js-menu-container .is-open {
+  transform: translateX(100%);
+}
+.is-open {
+  visibility: visible;
+}
+.js-close-menu {
+  background: $white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 385px;
+  margin-top: 10px;
+  align-items: center;
+}
+.js-open-menu {
+  background-color: $white;
+  width: 40px;
+  height: 40px;
+  border: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  &:hover,
+  &:focus {
+    fill: $blue;
+  }
+}
+.navigation__webstudio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.menu-mobile {
+  &__svg {
+    fill: #000;
+    border: none;
+    width: 40px;
+    height: 40px;
+    &:hover {
+      fill: $blue;
+    }
+  }
+  &__nav-list {
+    display: inline-block;
+  }
+  &__item {
+    &:not(:first-child) {
+      padding-top: 20px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.18;
+    text-align: center;
+    font-size: 40px;
+    font-family: "roboto";
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+
+    &:not(:first-child) {
+      padding-top: 20px;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__contact-tel {
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-family: "roboto";
+    font-size: 34px;
+    color: #757575;
+    text-decoration: none;
+    padding-left: 10px;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+  &__contact-list {
+    margin-top: 302px;
+    &:not(:first-child) {
+      padding-top: 32px;
+    }
+  }
+  &__contact-mail {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    font-family: "roboto";
+    color: #757575;
+    text-decoration: none;
+    padding-left: 10px;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+}
+
+.menu-socials {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+
+  &__link {
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+    color: $blue;
+    border-right: 1px solid #21212133;
+    text-decoration: none;
+
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.menu-mobile__open-svg {
+  &:hover {
+    fill: $blue;
+  }
+}
